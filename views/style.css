@@ -1,5 +1,14 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 table {
     border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
 }
 
 td {
@@ -17,4 +26,10 @@ th {
 
 .long {
     color: green;
+}
+
+#img-reserved-words {
+    min-height: 400px;
+    min-width: 400px;
+    border: 1px solid black;
 }
