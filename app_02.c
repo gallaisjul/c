@@ -8,5 +8,6 @@ int main(void)
     scanf("%d", &age_user);
 
     printf("You are %d years old!\n", age_user);
+
     return 0;
 }
