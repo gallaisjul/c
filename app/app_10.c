@@ -2,7 +2,7 @@
 
 #define SIZE_ARRAY 10
 
-void display_array(int *tab, int size);
+void display_array(int tab[], int size);
 
 int main(void)
 {
@@ -19,7 +19,7 @@ int main(void)
     return 0;
 }
 
-void display_array(int *tab, int size)
+void display_array(int tab[], int size)
 {
     int i = 0;
 
