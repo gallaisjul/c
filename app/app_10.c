@@ -2,13 +2,16 @@
 
 #define SIZE_ARRAY 10
 
-int *create_array(void);
 void display_array(int tab[], int size);
 
 int main(void)
 {
-    int i;
-    int *array = create_array();
+    int array[SIZE_ARRAY] = {1, 2, 3, 99, 5, 6, 7, 8, 9, 10};
+
+    display_array(array, SIZE_ARRAY);
+
+    printf("\n");
+    array[3] = 4;
 
     display_array(array, SIZE_ARRAY);
     printf("\n");
@@ -16,21 +19,10 @@ int main(void)
     return 0;
 }
 
-int *create_array(void)
-{
-    static int array_integer[10];
-    int i;
-
-    for(i = 0; i < 10; i++);
-        array_integer[i] = i * 3;
-
-    return array_integer;
-}
-
 void display_array(int tab[], int size)
 {
-    int j;
+    int i = 0;
 
-    for(j = 0; j < size; j++)
-        printf("[%d] ", tab[j]);	    
+    for(i = 0; i < size; i++)
+        printf("[%d] ", tab[i]);	    
 }
