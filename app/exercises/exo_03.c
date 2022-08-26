@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * [Affichage du produit de entiers]
+ * [Display of the product of two integers]
  */
 
 int main(void)
